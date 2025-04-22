@@ -1,53 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Snazzy Paws</title>
-    <meta
-      name="Snazzy Paws Pet Grooming"
-      content="A web site for Snazzy Paws Pet Grooming."
-    />
-    <link rel="stylesheet" href="./css/styles.css" />
-  </head>
 
-  <body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Snazzy Paws</title>
+  <meta name="Snazzy Paws Pet Grooming" content="A web site for Snazzy Paws Pet Grooming." />
+  
+  
+  <!-- Font for the heading  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="./css/styles.css" />
+
+
+
+
+</head>
+
+<body>
+
+    <!-- Header and navigation -->
     <header>
+      <div class="page-title">
+        <h1>Snazzy Paws Pet Grooming</h1>
+      </div>
       <nav>
         <div class="logo">
           <a href="/index.html">
-            <img
-              src="./images/Snazzy Paws home.png"
-              alt="Snazzy Paws Logo"
-              width="150px"
-          /></a>
+            <img src="./images/Snazzy Paws home.png" alt="Logo home" width="100px" /></a>
         </div>
         <div class="nav-link-box">
           <div class="hamburger">
-            <div></div>
-            <div></div>
-            <div></div>
+            <img id="hamburger-menu" src="./images/burger-menu.svg" alt="Hamburger Menu" width="50px" />
           </div>
           <ul class="nav-links">
-            <li><a href="/index.html">Home</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#gallery">Gallery</a></li>
             <li><a href="#booking">Booking</a></li>
             <li><a href="#contact">Contact</a></li>
+            <li><a href="/index.html">Home</a></li>
+
           </ul>
         </div>
       </nav>
-      <h1>Snazzy Paws Pet Grooming</h1>
+      
     </header>
+    <!-- Main content -->
     <main>
-      <section id="content">
-        <p>This is a simple web page testing a pull request.</p>
-        <p id="test">This is a simple web page.</p>
-      </section>
+      <section id="services">
+        <h2>Our Services</h2>
+        <p>We offer a range of pet grooming services to keep your furry friends looking their best.</p>
+        <ul>
+          <li>Bathing and drying</li>
+          <li>Haircuts and trims</li>
+          <li>Nail clipping</li>
+          <li>Ear cleaning</li>
+          <li>Flea and tick treatments</li>
+          <h2>Our Services</h2>
+          <p>We offer a range of pet grooming services to keep your furry friends looking their best.</p>
+          <ul>
+            <li>Bathing and drying</li>
+            <li>Haircuts and trims</li>
+            <li>Nail clipping</li>
+            <li>Ear cleaning</li>
+            <li>Flea and tick treatments</li>
+            <h2>Our Services</h2>
+            <p>We offer a range of pet grooming services to keep your furry friends looking their best.</p>
+            <ul>
+              <li>Bathing and drying</li>
+              <li>Haircuts and trims</li>
+              <li>Nail clipping</li>
+              <li>Ear cleaning</li>
+              <li>Flea and tick treatments</li>
+              <h2>Our Services</h2>
+              <p>We offer a range of pet grooming services to keep your furry friends looking their best.</p>
+
     </main>
+
+    <!-- Footer  -->
     <footer>
-      <p>&copy; 2023 My Web Page</p>
+      <div> <a href="/index.html">
+          <img src="./images/Snazzy Paws home.png" alt="Logo home" width="100px" /></a></div>
+      <div>
+        <p> Phone: 022123456</p>
+        <p> Address: 123 henry lane</p>
+        <p> email: 123@213213.com</p>
+      </div>
+
     </footer>
-    <script src="./js/script.js"></script>
-  </body>
+
+
+  <script src="./js/navbar.js"></script>
+</body>
+
 </html>
