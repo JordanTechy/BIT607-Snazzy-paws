@@ -32,27 +32,43 @@ body {
     border: 1px solid red;
 }
 
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px 20px;
+    background-color: var(--primary);
+
+}
+
+.header-left {
+    flex-shrink: 0;
+
+}
+
+.header-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+}
+
 /* Navbar */
 nav {
 
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: right;
     width: 100%;
     background-color: var(--primary);
     color: var(--black-text);
-    ;
     padding: 0px 0px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-
 
 }
 
 nav ul {
-
     display: flex;
     list-style: none;
-
 }
 
 nav ul li {
@@ -64,7 +80,7 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: var(--primary-text);
-    
+
 }
 
 nav ul li a:hover {
@@ -73,15 +89,15 @@ nav ul li a:hover {
 
 .page-title {
     text-align: center;
-    padding: 5px;
+    margin-right: 100px;
     background-color: var(--primary);
     /* shadow on the bottom */
-    font-family: "Fredoka", sans-serif;
 }
 
 .page-title h1 {
     font-family: "Fredoka", sans-serif;
-    font-weight: bold;
+    font-size: 2.5em;
+    font-weight: 500;
 }
 
 .hamburger {
