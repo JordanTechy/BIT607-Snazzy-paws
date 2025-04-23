@@ -1,10 +1,19 @@
 :root {
-    /* Change the colors here for the color scheme for the site */
-
-    --primary: #4bf391;
-    --secondary: #2980b9;
-    --complementary: #2980b9;
-    --complementary2: #27ae60;
+    /* Primary Colors */
+    --primary: #00bf7d;
+    /* Green Teal */
+    --secondary: #00b4c5;
+    /* Aqua Blue */
+    --accent: #0073e6;
+    /* Blue */
+    --accent-2: #2546f0;
+    /*Indigo Blue */
+    --accent-3: #5928ed;
+    /* Violet */
+    --black-text: #000000;
+    --white-text: #ffffff;
+    --background: #ffffff;
+    --surface: #f5f5f5;
 
 }
 
@@ -30,10 +39,10 @@ nav {
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
-
     background-color: var(--primary);
+    color: var(--black-text);
+    ;
     padding: 0px 0px;
-    color: white;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
 
@@ -48,17 +57,18 @@ nav ul {
 
 nav ul li {
     padding: 10px 20px;
-    color: black;
+    color: var(--primary-text);
     font-size: 1.5em;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: black;
+    color: var(--primary-text);
+    
 }
 
 nav ul li a:hover {
-    color: var(--secondary);
+    font-style: italic;
 }
 
 .page-title {
@@ -67,8 +77,6 @@ nav ul li a:hover {
     background-color: var(--primary);
     /* shadow on the bottom */
     font-family: "Fredoka", sans-serif;
-
-
 }
 
 .page-title h1 {
@@ -92,7 +100,12 @@ nav ul li a:hover {
     padding-right: 20px;
 }
 
-/* this active link is what we toggle on in the script.js */
+/* 
+This active class we put on the link box when 
+we toggle on in the navbar.js. this makes the nav menue
+fit the entire screen and puts it infront of everything using
+z-index 1000
+*/
 .nav-link-box.active {
     position: fixed;
     top: 0;
@@ -125,7 +138,6 @@ nav ul li a:hover {
     nav ul {
         display: none;
         flex-direction: column;
-
     }
 
     .hamburger {
@@ -157,7 +169,6 @@ footer {
 main {
     display: flex;
     flex: 1;
-
     padding: 20px;
     justify-content: center;
 
