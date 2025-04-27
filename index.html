@@ -20,69 +20,65 @@
   <!-- Header and navigation -->
   <header>
     <!-- We make the logo on left and the other content on the right -->
-    <div class="header-left">
+    <nav>
       <a class="logo" href="./index.html">
-        <img src="./images/Snazzy Paws home.png" alt="Logo home" width="100px" /></a>
-    </div>
-    <div class="header-right">
-      <nav>
-        <div class="nav-link-box">
-          <div class="hamburger">
-            <img id="hamburger-menu" src="./images/burger-menu.svg" alt="Hamburger Menu" width="50px" />
-          </div>
-          <ul class="nav-links">
-            <li><a href="./services.html">Services</a></li>
-            <li><a href="./gallery.html">Gallery</a></li>
-            <li><a href="./booking.html">Booking</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-            <li>
-              <a href="./index.html" style="text-decoration: underline">Home</a>
-            </li>
-          </ul>
+        <img src="./images/Snazzy Paws home.png" alt="Logo home" width="70px" />
+      </a>
+      <!-- wrap both the hamburder and nav links in a box so we can use in css and js -->
+      <div class="nav-link-box">
+        <div class="hamburger">
+          <img id="hamburger-menu" src="./images/burger-menu.svg" alt="Hamburger Menu" width="50px" />
         </div>
-      </nav>
-      <div class="page-title">
-        <h1>Snazzy Paws Pet Grooming</h1>
+        <ul class="nav-links">
+          <li><a href="./services.html">Services</a></li>
+          <li><a href="./gallery.html">Gallery</a></li>
+          <li><a href="./booking.html">Booking</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <li>
+            <a href="./index.html" style="text-decoration: underline">Home</a>
+          </li>
+        </ul>
       </div>
+    </nav>
+    <div class="page-title">
+      <h1>Snazzy Paws Pet Grooming</h1>
     </div>
   </header>
   <!-- Main content -->
-  <main class="home-page-content">
-    <div class="top-row">
-      <div class="top-row-left">
-        <section id="our-story">
-          <h2>Our Story</h2>
-          <p>
-            Snazzy Paws Pet Grooming is a family-owned business that has been
-            serving the community for over 10 years. We are passionate about
-            providing freindly and professional service to all our furry
-            friends. Our team of experienced groomers is dedicated to making your pets
-            look and feel their best. From basic grooming to specialized treatments,
-            we ensure a comfortable and enjoyable experience for your furry companions.
-          </p>
-        </section>
-      </div>
-      <div class="top-row-right">
-        <section id="featured-images">
+  <main>
+    <div id="home">
+
+      <div class="top-row">
+        <div class="left-column">
+          <section id="our-story">
+            <h2>Our Story</h2>
+            <p>
+              Snazzy Paws Pet Grooming is a family-owned business that has been
+              serving the community for over 10 years. We are passionate about
+              providing freindly and professional service to all our furry
+              friends. Our team of experienced groomers is dedicated to making your pets
+              look and feel their best. From basic grooming to specialized treatments,
+              we ensure a comfortable and enjoyable experience for your furry companions.
+            </p>
+          </section>
+        </div>
+        <div class="right-column">
           <h2>Featured Images</h2>
-          <div class="image-grid">
+          <section id="featured-images">
             <div class="image-box">
               <img src="./images/washing-dog.jpg" alt="Featured Image 1" class="featured-image" width="250px" />
-              <caption>cute porgie</caption>
+              <figcaption>cute porgie</figcaption>
             </div>
             <div class="image-box">
               <img src="./images/dog-with-bubbles.jpg" alt="Featured Image 2" width="250px" />
-              <caption>Dog getting washed</caption>
+              <figcaption>Dog getting washed</figcaption>
             </div>
-          </div>
-        </section>
+          </section>
+        </div>
+
       </div>
-
-
-      <section id="eductaional">
-
-        <div class="middle-row">
-
+      <div class="middle-row">
+        <section id="eductaional">
           <div class="middle-row-left">
             <h2>Educational</h2>
             <p>
@@ -91,16 +87,22 @@
             </p>
           </div>
           <div class="middle-row-right">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/nFIAh28v6gk?si=exgdWxApZIA8Tocp"
-              title="YouTube video player" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="video-container">
+
+              <iframe  src="https://www.youtube.com/embed/nFIAh28v6gk?si=exgdWxApZIA8Tocp"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
           </div>
-        </div>
-      </section>
-      <section id="book-now">
-        <button class="book-now-button"><a href="./booking.html">Book Now</a></button>
-      </section>
+        </section>
+      </div>
+      <div class="bottom-row">
+          <button class="book-now-btn"><a href="./booking.html">Book Now</a></button>
+
+      </div>
+
+
   </main>
 
   <!-- Footer  -->
@@ -117,6 +119,7 @@
   </footer>
 
   <script src="./js/navbar.js"></script>
+
 </body>
 
 </html>

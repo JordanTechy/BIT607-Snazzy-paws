@@ -2,7 +2,8 @@
     /* Primary Colors */
     --primary: #00bf7d;
     /* Green Teal */
-    --secondary: #00b4c5;
+    --secondary: #1976d2;
+    ;
     /* Aqua Blue */
     --accent: #0073e6;
     /* Blue */
@@ -35,6 +36,7 @@ body {
 
 header {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     padding: 10px 20px;
@@ -42,27 +44,13 @@ header {
 
 }
 
-.header-left {
-    flex-shrink: 0;
-
-}
-
-.header-right {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-grow: 1;
-}
-
 /* Navbar */
 nav {
 
     display: flex;
-    justify-content: right;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
-    background-color: var(--primary);
-    color: var(--black-text);
-    padding: 0px 0px;
 
 }
 
@@ -89,7 +77,6 @@ nav ul li a:hover {
 
 .page-title {
     text-align: center;
-    margin-right: 100px;
     background-color: var(--primary);
     /* shadow on the bottom */
 }
@@ -163,7 +150,7 @@ z-index 1000
     }
 }
 
-/* Footer */
+
 
 
 /* Footer */
@@ -171,7 +158,6 @@ z-index 1000
 footer {
 
     display: flex;
-    justify-content: center;
     align-items: center;
     justify-content: space-evenly;
     background-color: var(--primary);
@@ -181,11 +167,141 @@ footer {
 }
 
 
-/* Main content area */
-main {
+/*------------------ Home page -------------------------------*/
+
+/* Make entire home page a column and flex */
+#home {
     display: flex;
-    flex: 1;
-    padding: 20px;
-    justify-content: center;
+    flex-direction: column;
+    font-size: 1.2em;
+    margin: 10px;
+}
+
+#home h2 {
+    margin: 10px;
+    font-family: "Fredoka", sans-serif;
+    font-weight: 500;
+}
+
+/*-------------- Home page top row --- */
+
+/* set the top row to be a flexbox */
+#home .top-row {
+    display: flex;
+    margin: 10px;
 
 }
+
+/* set the left column to be 50% */
+#home .top-row .left-column {
+    text-align: center;
+}
+
+#home .top-row .right-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 10px;
+
+
+}
+
+#home .top-row .right-column h2 {
+    text-align: center;
+
+}
+
+#home .top-row .right-column #featured-images {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+#home .top-row .right-column .image-box {
+    display: flex;
+    flex-direction: column;
+}
+
+/* When screen is smaller,top row to be stacked */
+@media (max-width: 768px) {
+    #home .top-row {
+        flex-direction: column;
+    }
+
+    #home .top-row .left-column,
+    #home .top-row .right-column {
+        width: 100%;
+    }
+}
+
+/* responsive part of the nav bar to toggle the hamburger */
+@media screen and (max-width: 1000px) {
+
+    #home .top-row .right-column #featured-images {
+        flex-direction: column;
+    }
+}
+
+
+/*-------------- Home page middle row --- */
+
+#home .middle-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+
+.video-container {
+    width: 100%;
+    aspect-ratio: 16 / 9; /* modern way for responsive video */
+  }
+  
+  .video-container iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+
+
+
+/*-------------- Home page bottom row --- */
+
+#home .bottom-row {
+    display: flex;
+    justify-content: center;
+}
+
+.book-now-btn {
+    background-color: #1976d2;
+    /* MUI Primary Blue */
+    margin: 20px;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 2em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+}
+
+.book-now-btn a {
+    text-decoration: none;
+    color: white;
+}
+
+.book-now-btn:hover {
+    background-color: red;
+    /* Darker blue on hover */
+}
+
+.book-now-btn:active {
+    transform: scale(0.98);
+}
+
+
+/*------------------ About page -------------------------------*/
