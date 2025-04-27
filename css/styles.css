@@ -19,6 +19,7 @@
 }
 
 * {
+
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -27,10 +28,14 @@
 }
 
 body {
+
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
-    border: 1px solid red;
+    height: 100vh;
+    max-width: 1400px;
+    border: #000000 solid 1px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -41,6 +46,7 @@ header {
     justify-content: flex-start;
     padding: 10px 20px;
     background-color: var(--primary);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 
 }
 
@@ -163,18 +169,23 @@ footer {
     background-color: var(--primary);
     color: black;
     width: 100%;
+    margin-top: auto;
 
 }
 
 
 /*------------------ Home page -------------------------------*/
 
+
 /* Make entire home page a column and flex */
-#home {
+main {
     display: flex;
     flex-direction: column;
     font-size: 1.2em;
     margin: 10px;
+
+
+
 }
 
 #home h2 {
@@ -195,6 +206,7 @@ footer {
 /* set the left column to be 50% */
 #home .top-row .left-column {
     text-align: center;
+    width: 50%;
 }
 
 #home .top-row .right-column {
@@ -203,6 +215,8 @@ footer {
     align-items: center;
     justify-content: center;
     text-align: center;
+    width: 50%;
+
     margin: 10px;
 
 
@@ -256,14 +270,15 @@ footer {
 
 .video-container {
     width: 100%;
-    aspect-ratio: 16 / 9; /* modern way for responsive video */
-  }
-  
-  .video-container iframe {
+    aspect-ratio: 16 / 9;
+    /* modern way for responsive video */
+}
+
+.video-container iframe {
     width: 100%;
     height: 100%;
     border: 0;
-  }
+}
 
 
 
