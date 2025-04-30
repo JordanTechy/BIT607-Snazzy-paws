@@ -52,9 +52,6 @@ main {
     flex: 1;
 }
 
-#main-content {
-    text-align: center;
-}
 
 h1 {
     margin: 10px;
@@ -68,7 +65,7 @@ h2 {
     margin: 10px;
     font-family: "Fredoka", sans-serif;
     font-weight: 500;
-    
+
     font-size: 2em;
 }
 
@@ -373,4 +370,32 @@ iframe {
 }
 
 
-/*------------------ About page -------------------------------*/
+/*------------------ Services-------------------------------*/
+
+#services {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+#services-intro {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+#services-contanier {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;    
+    gap: 20px;
+    
+
+}
+.service-item {
+    border: #000000 solid 1px;
+}
