@@ -3,7 +3,7 @@
     --primary: #00bf7d;
     /* Green Teal */
     --secondary: #1976d2;
-    ;
+
     /* Aqua Blue */
     --accent: #0073e6;
     /* Blue */
@@ -284,7 +284,7 @@ footer {
 } */
 
 
-#home #eductaional {
+#home #educational {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -321,7 +321,7 @@ iframe {
 }
 
 @media screen and (max-width: 768px) {
-    #home #eductaional {
+    #home #educational {
         flex-direction: column;
     }
 
@@ -460,3 +460,57 @@ summary {
 
 
 /*------------------ Gallery-------------------------------*/
+
+
+.gallery-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    /* Allow items to wrap onto a new row */
+    justify-content: center;
+    /* Center items horizontally */
+}
+
+.gallery-item {
+    padding: 10px;
+    width: 20%;
+    /* This gives 3 items per row */
+    margin: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item figcaption {
+    padding: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+    .gallery-item {
+        width: 25%;
+        /* Full width on smaller screens */
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .gallery-item {
+        width: 40%;
+        /* Full width on smaller screens */
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .gallery-item {
+        width: 100%;
+        /* Full width on smaller screens */
+    }
+
+}
