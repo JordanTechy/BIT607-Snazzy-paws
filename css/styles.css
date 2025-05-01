@@ -376,7 +376,7 @@ iframe {
     display: flex;
     align-items: center;
     flex-direction: column;
- 
+
 }
 
 #services-intro {
@@ -392,7 +392,7 @@ iframe {
     align-items: center;
     flex-wrap: wrap;
     gap: 20px;
-    
+
 
 
 }
@@ -400,32 +400,63 @@ iframe {
 .service-item {
     max-width: 400px;
     width: 100%;
-    height: 200px;
+    height: 180px;
+    padding: 15px;
+
+    display: flex;
+    flex-direction: column;
+    border: #000000 solid 1px;
+    border-radius: 10px;
+    background-color: var(--surface);
+    box-shadow: 0 4px 8px rgba(50, 16, 199, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.9s ease;
+    text-align: center;
+    padding: 20px
+}
+
+.service-item:hover {
+    transform: scale(1.1);
+}
+
+.service-item .service-info {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 15px;
-    border: #000000 solid 1px ;
-    border-radius: 10px;
-    background-color: var(--surface);
-    box-shadow: 0 4px 8px rgba(50, 16, 199, 0.2);
-    transition:  transform 0.3s ease, box-shadow 0.9s ease;
-
     text-align: center;
-    
+    width: 100%;
+    height: 100%;
+    font-size: 1.1em;
+
 
 }
-.service-item:hover {
-    transform: scale(1.1);
-}
+
 .service-item .service-name {
     font-size: 1.2em;
     font-weight: 600;
     margin-bottom: 10px;
-    
+
 }
 
 .service-item .service-desciption {
     margin-bottom: 10px;
 }
+
+#services-table tr td {
+    padding: 3px;
+
+}
+
+summary {
+
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: 600;
+    margin: 10px;
+    cursor: pointer;
+
+
+}
+
+
+/*------------------ Gallery-------------------------------*/
