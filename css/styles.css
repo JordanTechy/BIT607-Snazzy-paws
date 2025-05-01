@@ -375,9 +375,8 @@ iframe {
 #services {
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
-
+ 
 }
 
 #services-intro {
@@ -391,11 +390,42 @@ iframe {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    flex-wrap: wrap;    
+    flex-wrap: wrap;
     gap: 20px;
     
 
+
 }
+
 .service-item {
-    border: #000000 solid 1px;
+    max-width: 400px;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    border: #000000 solid 1px ;
+    border-radius: 10px;
+    background-color: var(--surface);
+    box-shadow: 0 4px 8px rgba(50, 16, 199, 0.2);
+    transition:  transform 0.3s ease, box-shadow 0.9s ease;
+
+    text-align: center;
+    
+
+}
+.service-item:hover {
+    transform: scale(1.1);
+}
+.service-item .service-name {
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-bottom: 10px;
+    
+}
+
+.service-item .service-desciption {
+    margin-bottom: 10px;
 }
