@@ -468,50 +468,36 @@ summary {
     flex-wrap: wrap;
     /* Allow items to wrap onto a new row */
     justify-content: center;
+
     /* Center items horizontally */
 }
 
 .gallery-item {
 
-    padding: 10px;
-    width: 20%;
     /* This gives 3 items per row */
     margin: 20px;
-    border-radius: 10px;
     text-align: center;
 }
 
 .gallery-item img {
-    width: 300px;
-    height: 300px;
+
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    /* keeps square shape */
+
     object-fit: cover;
     transition: transform 0.3s ease;
 }
 
-.gallery-item figcaption {
-    padding: 10px;
-}
+.gallery-item figcaption {}
 
-@media screen and (max-width: 1000px) {
-    .gallery-item {
-        width: 25%;
-        /* Full width on smaller screens */
-    }
 
-}
 
-@media screen and (max-width: 768px) {
-    .gallery-item {
-        width: 40%;
-        /* Full width on smaller screens */
-    }
-
-}
 
 @media screen and (max-width: 500px) {
     .gallery-item {
+        /* Make a lil bigger for smaller screens */
         width: 100%;
-        /* Full width on smaller screens */
     }
 
 }
