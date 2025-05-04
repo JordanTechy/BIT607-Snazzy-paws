@@ -511,7 +511,7 @@ summary {
     margin-bottom: 10px;
 }
 
-form.booking-form {
+.booking-form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -545,4 +545,20 @@ form.booking-form {
     border-radius: 3px;
     border: #000000 solid 1px;
     font-size: 1em;
+}
+
+@media screen and (max-width: 500px) {
+
+    .form-group {
+        /* Make a lil bigger for smaller screens */
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .form-group label {
+        width: 100%;
+        text-align: center;
+        margin: 5px;
+    }
 }
