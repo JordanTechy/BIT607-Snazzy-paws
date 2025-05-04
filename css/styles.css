@@ -48,8 +48,8 @@ main {
     align-items: center;
     /* justify-content: center; */
     font-size: 1.2em;
-    margin: 10px;
     flex: 1;
+    margin-bottom: 10px;
 }
 
 
@@ -112,9 +112,11 @@ nav ul li a:hover {
     font-style: italic;
 }
 
-.page-title {
+.page-title h1 {
     text-align: center;
     background-color: var(--primary);
+    margin: 0;
+    padding: 0;
     /* shadow on the bottom */
 }
 
@@ -341,10 +343,10 @@ iframe {
 }
 
 .book-now-btn {
-    background-color: #1976d2;
+    background-color: var(--accent);
     /* MUI Primary Blue */
     margin: 20px;
-    color: white;
+    color: var(--white-text);
     border: none;
     padding: 8px 16px;
     border-radius: 4px;
@@ -357,11 +359,11 @@ iframe {
 
 .book-now-btn a {
     text-decoration: none;
-    color: white;
+    color: var(--white-text);
 }
 
 .book-now-btn:hover {
-    background-color: red;
+    background-color: var(--accent-2);
     /* Darker blue on hover */
 }
 
@@ -500,4 +502,47 @@ summary {
         width: 100%;
     }
 
+}
+
+/*------------------ Booking-------------------------------*/
+
+#booking-message {
+
+    margin-bottom: 10px;
+}
+
+form.booking-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+
+}
+
+.booking-form h4 {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    display: flex;
+    width: 100%;
+    margin: 5px;
+}
+
+.form-group label {
+    width: 30%;
+    text-align: left;
+    margin-right: 10px;
+}
+
+.form-group input,
+.form-group select {
+    width: 70%;
+    padding: 10px;
+    border-radius: 3px;
+    border: #000000 solid 1px;
+    font-size: 1em;
 }
