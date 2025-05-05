@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
     navLinkBox.classList.toggle("active");
 
     // Toggle icon because i want to show a x for accessability
-    // to show the menue can be closed with a X 
+    // to show the menu can be closed with a X 
     if (icon.src.includes("burger-menu.svg")) {
       icon.src = "./images/burger-menu-close.svg";
     } else {

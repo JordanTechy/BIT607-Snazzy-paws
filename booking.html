@@ -14,6 +14,8 @@
     href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="./css/styles.css" />
+  <script src="./js/bookingform.js"></script>
+
 </head>
 
 <body>
@@ -37,7 +39,7 @@
           <li><a href="./gallery.html">Gallery</a></li>
           <li><a href="./booking.html" style="text-decoration: underline">Booking</a></li>
           <li><a href="./contact.html">Contact</a></li>
-     
+
         </ul>
       </div>
     </nav>
@@ -49,30 +51,30 @@
   <main id="booking-page">
     <h2>Booking</h2>
     <div class="booking-form">
-      <form onsubmit="event.preventDefault(); alert('Going home!');" class="booking-form">
+      <form id="booking-form">
         <p id="booking-message">
           Please fill in the following form to book your appointment and
           well get back to you with a confirmation email.
         </p>
         <div class="form-group">
           <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required />
-        </div>
-
-        <div class="form-group">
-
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required />
+          <input id="name" type="text" id="name" name="name" required />
         </div>
         <div class="form-group">
 
           <label for="pet-name">Pet name:</label>
           <input type="text" id="pet-name" name="pet-name" required />
         </div>
+        <div class="form-group">
 
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
         <div class="form-group">
           <label for="service">Service:</label>
           <select id="service" name="service" required>
+            <option value="" disabled selected>Select a service</option>
+
             <option value="dog_wash">Dog Wash</option>
             <option value="cat_grooming">Cat Grooming</option>
             <option value="dog_walking">Dog Walking</option>
@@ -92,13 +94,56 @@
           <input type="date" id="date" name="date" required />
         </div>
         <div class="form-group">
+
           <label for="time">Time:</label>
-          <input type="time" id="time" name="time" min="08:00" max="17:00" required />
+          <input type="time" id="time" name="time" min="07:00" max="16:00" required />
         </div>
+        <p>Please choose a time between 7am and 6pm </p>
 
-        <button class="book-now-btn" type="submit">Book Now</button>
+        <input class="book-now-btn" type="submit" value="Submit" />
 
+      </form>
+      <!-- Pop up NOTE: We use the ids in the bookingform.js file -->
+      <div id="popup">
+        <div class="popup-box">
+          <p>Please confirm </p>
+          <div class="popup-info">
+            <p class="popup-label">Name:</p>
+            <p id="popup-name"></p>
+          </div>
 
+          <div class="popup-info">
+            <p class="popup-label">Pet Name:</p>
+            <p id="popup-pet-name"></p>
+          </div>
+
+          <div class="popup-info">
+            <p class="popup-label">Email:</p>
+            <p id="popup-email"></p>
+          </div>
+
+          <div class="popup-info">
+            <p class="popup-label">Service:</p>
+            <p id="popup-service"></p>
+          </div>
+
+          <div class="popup-info">
+            <p class="popup-label">Date:</p>
+            <p id="popup-date"></p>
+          </div>
+
+          <div class="popup-info">
+            <p class="popup-label">Time:</p>
+            <p id="popup-time"></p>
+          </div>
+
+          <p>Are you sure?</p>
+
+          <button onclick="handleYes()">Yes</button>
+          <button onclick="handleNo()">No</button>
+        </div>
+      </div>
+      <!-- Pop up -->
     </div>
 
   </main>
