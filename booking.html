@@ -51,7 +51,7 @@
   <main id="booking-page">
     <h2>Booking</h2>
     <div class="booking-form">
-      <form id="booking-form">
+      <form >
         <p id="booking-message">
           Please fill in the following form to book your appointment and
           well get back to you with a confirmation email.
@@ -64,6 +64,16 @@
 
           <label for="pet-name">Pet name:</label>
           <input type="text" id="pet-name" name="pet-name" required />
+        </div>
+        <div class="form-group">
+
+          <label for="pet-breed">Breed:</label>
+          <input type="text" id="pet-breed" name="pet-breed" required  />
+        </div>
+        <div class="form-group">
+
+          <label for="pet-age">Pet age:</label>
+          <input type="number" id="pet-age" name="pet-age" required />
         </div>
         <div class="form-group">
 
@@ -116,7 +126,14 @@
             <p class="popup-label">Pet Name:</p>
             <p id="popup-pet-name"></p>
           </div>
-
+          <div class="popup-info">
+            <p class="popup-label">Pet breed:</p>
+            <p id="popup-pet-breed"></p>
+          </div>
+          <div class="popup-info">
+            <p class="popup-label">Pet age:</p>
+            <p id="popup-pet-age"></p>
+          </div>
           <div class="popup-info">
             <p class="popup-label">Email:</p>
             <p id="popup-email"></p>

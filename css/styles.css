@@ -507,6 +507,9 @@ summary {
     margin-bottom: 10px;
 }
 
+form {
+    width: 500px;
+}
 .booking-form {
     display: flex;
     flex-direction: column;
@@ -612,3 +615,16 @@ summary {
     margin-right: 10px;
     font-weight: 600;
 }
+
+/* ---------------------contact page---------------- */
+
+ #contact-page {
+    display: flex;
+    margin: 15px;
+}
+
+.comment{
+    width: 100%;
+    border: #000000 1px solid;
+}
+

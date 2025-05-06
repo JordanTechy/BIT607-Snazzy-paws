@@ -25,6 +25,15 @@ function openPopup() {
     var petName = document.getElementById("pet-name").value;
     var popupPetName = document.getElementById("popup-pet-name");
     popupPetName.innerHTML = petName;
+    // Pet Type
+    var petBreed = document.getElementById("pet-breed").value;
+    var popupPetBreed = document.getElementById("popup-pet-breed");
+    popupPetBreed.innerHTML = petBreed;
+    // pet age
+    var petAge = document.getElementById("pet-age").value;
+    var popupPetAge = document.getElementById("popup-pet-age");
+    popupPetAge.innerHTML = petAge;
+    
     //email
     var email = document.getElementById("email").value;
     var popupEmail = document.getElementById("popup-email");
