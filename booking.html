@@ -51,11 +51,12 @@
   <main id="booking-page">
     <h2>Booking</h2>
     <div class="booking-form">
+      <p id="booking-message">
+        Please fill in the following form to book your appointment and
+        well get back to you with a confirmation email.
+      </p>
       <form >
-        <p id="booking-message">
-          Please fill in the following form to book your appointment and
-          well get back to you with a confirmation email.
-        </p>
+      
         <div class="form-group">
           <label for="name">Name:</label>
           <input id="name" type="text" id="name" name="name" required />
@@ -108,7 +109,10 @@
           <label for="time">Time:</label>
           <input type="time" id="time" name="time" min="07:00" max="16:00" required />
         </div>
-        <p>Please choose a time between 7am and 6pm </p>
+        <div id="time-message">
+          <p>Please choose a time between 7am and 6pm </p>
+
+        </div>
 
         <input class="book-now-btn" type="submit" value="Submit" />
 

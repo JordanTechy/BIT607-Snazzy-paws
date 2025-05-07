@@ -48,27 +48,31 @@
   </header>
   <!-- Main content -->
   <main id="contact-page">
-    <h2>Contact Us</h2>
-    <p class="contact-message">We are here to help you with all your pet grooming needs. </p>
+   
+    <section class="contact-details">
+      <h2>Contact Us</h2>
+      <p class="contact-message">We are here to help you with all your pet grooming needs. </p>
+      
+      <div  class="contact-details-group">
+        <p> <b>Owners Name:</b> Jannet</p>
+        <p> <b>PH:</b> 123456789</p>
+        <p> <b>Email:</b>
+          <a href="mailto:snazzyparsgrooming@outlook.com">snazzyparsgrooming@outlook.com</a>
+        </p>
+        <p><b>Opening Hours:</b> 9am - 5pm</p>
+        <p><b>Address:</b>123 henry lane, Auckland.</p>
+  
 
-    <div class="contact-details">
-
-      <p> <b>Owners Name:</b> Jannet</p>
-      <p> <b>PH:</b> 123456789</p>
-      <p> <b>Email:</b>
-        <a href="mailto:snazzyparsgrooming@outlook.com">snazzyparsgrooming@outlook.com</a>
-      </p>
-      <p><b>Opening Hours:</b> 9am - 5pm</p>
-
-    </div>
-    <p class="contact-message">Fill out this form with any questions or concerns and well get
-      right back to you.</p>
-    <div class="contact-form">
+      </div>
      
 
-      <form>
-    
-        <div class="form-group">
+
+    </section>
+ 
+    <section class="contact-form">
+      <p class="contact-message">Fill out this form with any questions or concerns and well get
+        right back to you.</p>
+        <form onsubmit="alert('Thank you for contacting us! We will get back to you shortly.'); return false;">        <div class="form-group">
           <label for="name">Name:</label>
           <input id="name" type="text" name="name" required />
         </div>
@@ -85,17 +89,18 @@
           <label  for="comment">Message:</label>
           <textarea class="comment" name="comment" rows="4" required></textarea>
         </div>
-        <input class="  " type="submit" value="Submit" />
+        <div class="form-btn">
+          <input type="submit" value="Submit" />
+        </div>
       </form>
-    </div>
+    </section>
 
-    <div class="contact-map">
+    <section class="contact-map">
       <h2>Location</h2>
-      <p>We are located at 123 henry lane, Auckland.</p>
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.9999999999995!2d-122.4194154846814!3d37.77492927975957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808c8c8c8c8c%3A0x8c8c8c8c8c8c8c8c!2sSnazzy%20Paws%20Pet%20Grooming!5e0!3m2!1sen!2sus!4v1633033033030"
         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    </div>
+    </section>
 
 
   </main>
@@ -103,12 +108,12 @@
   <!-- Footer  -->
   <footer>
     <div> <a href="./index.html">
-        <img src="./images/Snazzy Paws home.png" alt="Logo home" width="100px" /></a></div>
+        <img src="./images/Snazzy Paws home.png" alt="Logo home" width="100px" /></a>
+    </div>
     <div>
       <p> Phone: 022123456</p>
       <p> Address: 123 henry lane</p>
       <p> email: 123@213213.com</p>
-    </div>
     </div>
 
 

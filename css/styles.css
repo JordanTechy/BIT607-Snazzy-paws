@@ -179,6 +179,10 @@ z-index 1000
         margin-right: 30px;
         cursor: pointer;
     }
+
+    nav a{
+        font-size: 1.5em;
+    }
 }
 
 
@@ -505,11 +509,21 @@ summary {
 #booking-message {
 
     margin-bottom: 10px;
+   font-size: 1.1em;
+}
+#time-message{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;    
 }
 
 form {
-    width: 500px;
+  width: 100%;
+  max-width: 500px;
+  padding: 0 15px; 
+
 }
+
 .booking-form {
     display: flex;
     flex-direction: column;
@@ -527,7 +541,6 @@ form {
 
 .form-group {
     display: flex;
-    width: 100%;
     margin: 5px;
 }
 
@@ -559,6 +572,10 @@ form {
         width: 100%;
         text-align: center;
         margin: 5px;
+    }
+    .form-group input,
+    .form-group select {
+      width: 100%; /* Full width on small screens */
     }
 }
 
@@ -618,13 +635,88 @@ form {
 
 /* ---------------------contact page---------------- */
 
- #contact-page {
-    display: flex;
-    margin: 15px;
+.contact-message {
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    font-size: 1.3em;
 }
 
-.comment{
+.contact-details .contact-message {
+    margin-top: 0;
+}
+
+.contact-details {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    line-height: 1.5;
+}
+.contact-details-group{
+    display: flex;
+    flex-direction: column;
+
+
+}
+.contact-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.contact-map {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form-group input {
+    width: 100%;
+}
+
+
+.comment {
     width: 100%;
     border: #000000 1px solid;
 }
 
+.form-btn {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 2em;
+}
+
+.form-btn input {
+    background-color: var(--secondary);
+    /* MUI Primary Blue */
+    margin: 20px;
+    color: var(--white-text);
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+
+.contact-button button:hover {
+    background-color: var(--accent-2);
+    /* Darker blue on hover */
+}
+
+/* responsive part of the nav bar to toggle the hamburger */
+@media screen and (max-width: 768px) {
+    .contact-details {
+
+        align-items: flex-start;
+        padding: 10px;
+        text-align: left;
+    }
+
+
+}
