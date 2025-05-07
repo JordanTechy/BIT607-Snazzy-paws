@@ -1,12 +1,11 @@
 :root {
-    /* Primary Colors */
+    /* Variable so i can play with colors*/
     --primary: #00bf7d;
 
     --secondary: #0073e6;
 
     --accent-2: #2546f0;
 
-    /* Violet */
     --black-text: #000000;
     --white-text: #ffffff;
     --background: #ffffff;
@@ -20,7 +19,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family:  Arial, sans-serif;
 
 }
 
@@ -29,11 +28,11 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    /* ✅ allow to grow if content is taller */
     max-width: 1400px;
     border: #000000 solid 1px;
     margin-left: auto;
     margin-right: auto;
+    
 
 }
 
@@ -52,7 +51,7 @@ main {
 
 h1 {
     margin: 10px;
-    font-family: "Fredoka", sans-serif;
+    font-family: "Fredoka", sans-serif, Arial, ;
     font-weight: 500;
     font-size: 3em;
     text-align: center;
@@ -60,7 +59,7 @@ h1 {
 
 h2 {
     margin: 10px;
-    font-family: "Fredoka", sans-serif;
+    font-family: "Fredoka", sans-serif, Arial, ;
     font-weight: 500;
 
     font-size: 2em;
@@ -180,7 +179,7 @@ z-index 1000
         cursor: pointer;
     }
 
-    nav a{
+    nav a {
         font-size: 1.5em;
     }
 }
@@ -197,7 +196,19 @@ footer {
     width: 100%;
     margin-top: auto;
 
+
 }
+
+@media (max-width: 768px) {
+
+    footer {
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+
+
+}
+
 
 
 /*--------------Main Home page --------- --- */
@@ -509,18 +520,20 @@ summary {
 #booking-message {
 
     margin-bottom: 10px;
-   font-size: 1.1em;
+    font-size: 1.1em;
 }
-#time-message{
+
+#time-message {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;    
+    justify-content: center;
+    gap: 10px;
 }
 
 form {
-  width: 100%;
-  max-width: 500px;
-  padding: 0 15px; 
+    width: 100%;
+    max-width: 500px;
+    padding: 0 15px;
 
 }
 
@@ -552,12 +565,13 @@ form {
 
 .form-group input,
 .form-group select {
-    width: 70%;
+    width: 100%;
     padding: 10px;
     border-radius: 3px;
     border: #000000 solid 1px;
     font-size: 1em;
 }
+
 
 @media screen and (max-width: 500px) {
 
@@ -573,10 +587,7 @@ form {
         text-align: center;
         margin: 5px;
     }
-    .form-group input,
-    .form-group select {
-      width: 100%; /* Full width on small screens */
-    }
+
 }
 
 
@@ -653,12 +664,14 @@ form {
     width: 100%;
     line-height: 1.5;
 }
-.contact-details-group{
+
+.contact-details-group {
     display: flex;
     flex-direction: column;
-
+    width: 100%;
 
 }
+
 .contact-form {
     display: flex;
     align-items: center;
@@ -711,12 +724,12 @@ form {
 
 /* responsive part of the nav bar to toggle the hamburger */
 @media screen and (max-width: 768px) {
-    .contact-details {
-
-        align-items: flex-start;
+    .contact-details,.contact-message {
         padding: 10px;
-        text-align: left;
     }
+
+    
+
 
 
 }
