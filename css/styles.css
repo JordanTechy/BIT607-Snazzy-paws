@@ -419,6 +419,10 @@ summary {
     cursor: pointer;
 }
 
+/* Add a bit of margin in to account for tit overlapping the service boxes */
+.services-button {
+    margin: 20px;
+}
 /*------------------ Gallery-------------------------------*/
 
 .gallery-container {
