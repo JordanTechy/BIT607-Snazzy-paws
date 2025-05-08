@@ -2,18 +2,23 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A website for Snazzy Paws Grooming.">
   <title>Snazzy Paws</title>
-  <meta name="Snazzy Paws Grooming" content="A web site for Snazzy Paws Grooming." />
-
   <!-- Font for the heading  -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="./css/styles.css" />
+  <!-- 
+    This is the non minified version to use when developing
+    <link rel="stylesheet" href="./css/styles.css"> 
+    -->
+
+  <!-- Well use the minified version for production -->
+  <link rel="stylesheet" href="./css/styles-minified.css">
 </head>
 
 <body>
@@ -23,21 +28,19 @@
     <!-- We make the logo on left and the other content on the right -->
     <nav>
       <a class="logo" href="./index.html">
-        <img src="./images/Snazzy Paws home.png" alt="Logo home" width="70px" />
+        <img src="./images/Snazzy-paws-home.png" alt="Logo home" width="70">
       </a>
       <!-- wrap both the hamburder and nav links in a box so we can use in css and js -->
       <div class="nav-link-box">
         <div class="hamburger">
-          <img id="hamburger-menu" src="./images/burger-menu.svg" alt="Hamburger Menu" width="50px" />
+          <img id="hamburger-menu" src="./images/burger-menu.svg" alt="Hamburger Menu" width="50">
         </div>
         <ul class="nav-links">
           <li><a href="./index.html">Home</a></li>
-
           <li><a href="./services.html">Services</a></li>
           <li><a href="./gallery.html" style="text-decoration: underline">Gallery</a></li>
           <li><a href="./booking.html">Booking</a></li>
           <li><a href="./contact.html">Contact</a></li>
-
         </ul>
       </div>
     </nav>
@@ -45,61 +48,66 @@
       <h1>Snazzy Paws Grooming</h1>
     </div>
   </header>
-  <!-- Main content -->
-  <main>
+  <main id="gallery">
     <h2>Gallery</h2>
     <p>Check out our cute gallery of animals.</p>
 
     <div class="gallery-container">
+
       <figure class="gallery-item">
-        <img src="./images/dog1.jpg" alt="Lady patting her dog" />
+        <img src="./images/dog1.jpg" alt="Lady patting her dog">
         <figcaption>Lady patting her dog</figcaption>
       </figure>
-      <div class="gallery-item">
-        <img src="./images/dog2.jpg" alt="Happy dog after getting washed" />
+
+      <figure class="gallery-item">
+        <img src="./images/dog2.jpg" alt="Happy dog after getting washed">
         <figcaption>Happy dog after getting washed</figcaption>
 
-      </div>
-      <div class="gallery-item">
-        <img src="./images/dog3.jpg" alt="Dog in white sunglasses" />
+      </figure>
+      <figure class="gallery-item">
+        <img src="./images/dog3.jpg" alt="Dog in white sunglasses">
         <figcaption>Dog in white sunglasses</figcaption>
 
-      </div>
-      <div class="gallery-item">
-        <img src="./images/dog4.jpg" alt="Dog getting a shower" />
+      </figure>
+      <figure class="gallery-item">
+        <img src="./images/dog4.jpg" alt="Dog getting a shower">
         <figcaption>Dog getting a shower</figcaption>
 
-      </div>
-      <div class="gallery-item">
-        <img src="./images/dog5.jpg" alt="Fluffy Brown Dog" />
+      </figure>
+      <figure class="gallery-item">
+        <img src="./images/dog5.jpg" alt="Fluffy Brown Dog">
         <figcaption>Fluffy Brown Dog</figcaption>
 
-      </div>
-      <div class="gallery-item">
-        <img src="./images/dog6.jpg" alt="Dog with bubbles during wash" />
+      </figure>
+      <figure class="gallery-item">
+        <img src="./images/dog6.jpg" alt="Dog with bubbles during wash">
         <figcaption>Dog with bubbles </figcaption>
+      </figure>
 
-      </div>
-      <div class="gallery-item">
-        <img src="./images/dog7.jpg" alt="Saussage dog in dirt" />
+      <figure class="gallery-item">
+        <img src="./images/dog7.jpg" alt="Saussage dog in dirt">
         <figcaption>Saussage dog in dirt</figcaption>
+      </figure>
 
-      </div>
-      <div class="gallery-item">
-        <img src="./images/dog8.jpg" alt="Happy clean looking curly hair dog" />
+      <figure class="gallery-item">
+        <img src="./images/dog8.jpg" alt="Happy clean looking curly hair dog">
         <figcaption>Happy clean looking curly hair dog</figcaption>
-      </div>
+      </figure>
+
     </div>
     <div class="bottom-row">
-      <button class="book-now-btn"><a href="./booking.html">Book Now</a></button>
+      <a href="./booking.html" class="book-now-btn">Book Now</a>
     </div>
 
   </main>
 
   <!-- Footer  -->
   <footer>
-    <div> <a href="./index.html">
-        <img src="./images/Snazzy Paws home.png" alt="Logo home" width="100px" /></a></div>
+    <div>
+      <a href="./index.html">
+        <img src="./images/Snazzy-paws-home.png" alt="Logo home" width="100">
+      </a>
+    </div>
     <div>
       <p><b>Phone:</b> 022123456</p>
       <p><b>Address:</b> 123 henry lane, hamilton</p>

@@ -2,18 +2,25 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A website for Snazzy Paws Grooming.">
   <title>Snazzy Paws</title>
-  <meta name="Snazzy Paws Grooming" content="A web site for Snazzy Paws Grooming." />
-
   <!-- Font for the heading  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="./css/styles.css" />
+    rel="stylesheet">
+
+    <!-- 
+    This is the non minified version to use when developing
+    <link rel="stylesheet" href="./css/styles.css"> 
+    -->
+    
+   <!-- Well use the minified version for production -->
+  <link rel="stylesheet" href="./css/styles-minified.css">
+
 </head>
 
 <body>
@@ -22,12 +29,12 @@
     <!-- We make the logo on left and the other content on the right -->
     <nav>
       <a class="logo" href="./index.html">
-        <img src="./images/Snazzy Paws home.png" alt="Logo home" width="70px" />
+        <img src="./images/Snazzy-paws-home.png" alt="Logo home" width="70">
       </a>
       <!-- wrap both the hamburder and nav links in a box so we can use in css and js -->
       <div class="nav-link-box">
         <div class="hamburger">
-          <img id="hamburger-menu" src="./images/burger-menu.svg" alt="Hamburger Menu" width="50px" />
+          <img id="hamburger-menu" src="./images/burger-menu.svg" alt="Hamburger Menu" width="50">
         </div>
         <ul class="nav-links">
           <li>
@@ -37,7 +44,6 @@
           <li><a href="./gallery.html">Gallery</a></li>
           <li><a href="./booking.html">Booking</a></li>
           <li><a href="./contact.html">Contact</a></li>
-   
         </ul>
       </div>
     </nav>
@@ -48,89 +54,82 @@
   <!-- Main content -->
   <main>
     <h2>Home</h2>
-
     <div id="home">
       <div class="top-row">
         <div class="left-column">
-          <section id="our-story">
+          <section>
             <h2>Our Story</h2>
-            <p>
-              Snazzy Paws Grooming is a family-owned business that has been
-              serving the community for over 10 years. We are passionate about
-              providing freindly and professional service to all our furry
-              friends.
-            </p>
-            <p>
-              Our team of experienced groomers is dedicated to making your pets
-              look and feel their best. From basic grooming to specialized treatments,
-              we ensure a comfortable and enjoyable experience for your furry companions.
-            </p>
+            <div id="our-story">
+              <p>
+                Snazzy Paws Grooming is a family-owned business that has been
+                serving the community for over 10 years. We are passionate about
+                providing freindly and professional service to all our furry
+                friends.
+              </p>
+              <p>
+                Our team of experienced groomers is dedicated to making your pets
+                look and feel their best. From basic grooming to specialized treatments,
+                we ensure a comfortable and enjoyable experience for your furry companions.
+              </p>
+            </div>
           </section>
         </div>
         <div class="right-column">
-          <h2>Featuring</h2>
-          <section id="featured-images">
-            <div class="image-box">
-              <img src="./images/washing-dog.jpg" alt="Featured Image 1" class="featured-image" width="250px" />
-              <figcaption>Cute porgie</figcaption>
-            </div>
-            <div class="image-box">
-              <img src="./images/dog-with-bubbles.jpg" alt="Featured Image 2" width="250px" />
-              <figcaption>Dog with bubbles around</figcaption>
+          <section>
+            <h2>Featuring</h2>
+            <div id="featured-images">
+              <figure class="image-box">
+                <img src="./images/washing-dog.jpg" alt="Featured Image 1" class="featured-image" width="250">
+                <figcaption>Cute porgie</figcaption>
+              </figure>
+              <figure class="image-box">
+                <img src="./images/dog-with-bubbles.jpg" alt="Featured Image 2" width="250">
+                <figcaption>Dog with bubbles around</figcaption>
+              </figure>
             </div>
           </section>
         </div>
-
       </div>
       <div class="middle-row">
-        <h2>Educational</h2>
-        <section id="educational">
-          <div class="middle-row-left">
-
-
-            <p>
-              Grooming your dog at home can be a fun and rewarding experience. It can also help you save money on
-              grooming costs. In this video, we will show you how to groom your dog at home.
-            </p>
-          </div>
-          <div class="middle-row-right">
-            <div class="video-container">
-
-              <iframe src="https://www.youtube.com/embed/nFIAh28v6gk?si=exgdWxApZIA8Tocp" title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <section>
+          <h2>Educational</h2>
+          <div id="educational">
+            <div class="middle-row-left">
+              <p>
+                Grooming your dog at home can be a fun and rewarding experience. It can also help you save money on
+                grooming costs. In this video, we will show you how to groom your dog at home.
+              </p>
             </div>
-            <figcaption>Video showing a how to groom your dog.</figcaption>
+            <div class="middle-row-right">
+              <figure class="video-container">
+                <iframe src="https://www.youtube.com/embed/nFIAh28v6gk?si=exgdWxApZIA8Tocp" title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <figcaption>Video showing how to groom your dog.</figcaption>
+              </figure>
+            </div>
           </div>
         </section>
       </div>
       <div class="bottom-row">
-        <button class="book-now-btn"><a href="./booking.html">Book Now</a></button>
+        <a href="./booking.html" class="book-now-btn">Book Now</a>
       </div>
-
     </div>
-
-
   </main>
-
   <!-- Footer  -->
   <footer>
     <div>
       <a href="./index.html">
-        <img src="./images/Snazzy Paws home.png" alt="Logo home" width="100px" /></a>
+        <img src="./images/Snazzy-paws-home.png" alt="Logo home" width="100"></a>
     </div>
     <div>
       <p><b>Phone:</b> 022123456</p>
       <p><b>Address:</b> 123 henry lane, hamilton</p>
       <p><b>email:</b> snazzypaws@gmail.com</p>
       <p><b>Opening hours:</b> 9am - 5pm</p>
-
     </div>
   </footer>
-
   <script src="./js/navbar.js"></script>
-
 </body>
 
 </html>

@@ -1,30 +1,22 @@
 :root {
     /* Variable so i can play with colors*/
     --primary: #00bf7d;
-
     --secondary: #0073e6;
-
     --accent-2: #2546f0;
-
     --black-text: #000000;
     --white-text: #ffffff;
     --background: #ffffff;
-
     --service-item-background: #f0f0f0;
-
 }
 
 * {
-
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-
 }
 
 body {
-
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -32,8 +24,6 @@ body {
     border: #000000 solid 1px;
     margin-left: auto;
     margin-right: auto;
-
-
 }
 
 /* ------------------Global styles-------- */
@@ -48,10 +38,9 @@ main {
     margin-bottom: 10px;
 }
 
-
 h1 {
     margin: 10px;
-    font-family: "Fredoka", sans-serif, Arial, ;
+    font-family: "Fredoka", sans-serif, Arial;
     font-weight: 500;
     font-size: 3em;
     text-align: center;
@@ -59,9 +48,8 @@ h1 {
 
 h2 {
     margin: 10px;
-    font-family: "Fredoka", sans-serif, Arial, ;
+    font-family: "Fredoka", sans-serif, Arial;
     font-weight: 500;
-
     font-size: 2em;
 }
 
@@ -74,17 +62,14 @@ header {
     padding: 10px 20px;
     background-color: var(--primary);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-
 }
 
 /* ----------------Navbar---------------------- */
 nav {
-
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-
 }
 
 nav ul {
@@ -101,7 +86,6 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: var(--primary-text);
-
 }
 
 nav ul li a:hover {
@@ -113,16 +97,10 @@ nav ul li a:hover {
     background-color: var(--primary);
     margin: 0;
     padding: 0;
-    /* shadow on the bottom */
 }
-
 
 .hamburger {
     display: none;
-}
-
-.hamburger img {
-    src: "./images/menu-close.png";
 }
 
 .hamburger div {
@@ -151,7 +129,6 @@ z-index 1000
 }
 
 .nav-link-box.active .hamburger {
-
     position: absolute;
     top: 50px;
     right: 2px;
@@ -188,25 +165,19 @@ z-index 1000
 /* -----------------Footer -----------------*/
 
 footer {
-
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     background-color: var(--primary);
     width: 100%;
     margin-top: auto;
-
-
 }
 
 @media (max-width: 768px) {
-
     footer {
         flex-direction: column;
         padding-bottom: 20px;
     }
-
-
 }
 
 
@@ -217,15 +188,12 @@ footer {
 #home .top-row {
     display: flex;
     margin: 10px;
-
     margin-bottom: 50px;
-
 }
 
 /* set the left column to be 50% */
 #home .top-row .left-column {
     width: 50%;
-
 }
 
 #home .top-row h2 {
@@ -239,10 +207,7 @@ footer {
     justify-content: center;
     text-align: center;
     width: 50%;
-
     margin: 10px;
-
-
 }
 
 #home P {
@@ -253,7 +218,6 @@ footer {
 
 #home .top-row .right-column h2 {
     text-align: center;
-
 }
 
 #home .top-row .right-column #featured-images {
@@ -281,22 +245,13 @@ footer {
 
 /* responsive part of the nav bar to toggle the hamburger */
 @media screen and (max-width: 1000px) {
-
     #home .top-row .right-column #featured-images {
         flex-direction: column;
     }
 }
 
 
-/*-------------- Home page middle row --- */
-
-/* #home .middle-row {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-} */
-
-
+/*Home page middle row */
 #home #educational {
     display: flex;
     flex-direction: row;
@@ -321,12 +276,15 @@ footer {
 .video-container {
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
+}
 
+.video-container figcaption {
+    margin-top: 10px;
 }
 
 iframe {
-
     width: 80%;
     height: 80%;
     aspect-ratio: 16/9;
@@ -342,10 +300,9 @@ iframe {
     #home .middle-row .middle-row-right {
         width: 100%;
     }
-
 }
 
-/*-------------- Home page bottom row --- */
+/*Home page bottom row --- */
 
 #home .bottom-row {
     display: flex;
@@ -356,6 +313,7 @@ iframe {
 .book-now-btn {
     background-color: var(--secondary);
     /* MUI Primary Blue */
+    text-decoration: none;
     margin: 20px;
     color: var(--white-text);
     border: none;
@@ -365,7 +323,6 @@ iframe {
     text-transform: uppercase;
     cursor: pointer;
     transition: background-color 0.3s ease;
-
 }
 
 .book-now-btn a {
@@ -374,8 +331,8 @@ iframe {
 }
 
 .book-now-btn:hover {
-    background-color: var(--accent-2);
     /* Darker blue on hover */
+    background-color: var(--accent-2);
 }
 
 .book-now-btn:active {
@@ -389,7 +346,6 @@ iframe {
     display: flex;
     align-items: center;
     flex-direction: column;
-
 }
 
 #services-intro {
@@ -405,9 +361,6 @@ iframe {
     align-items: center;
     flex-wrap: wrap;
     gap: 20px;
-
-
-
 }
 
 .service-item {
@@ -415,12 +368,12 @@ iframe {
     width: 100%;
     height: 180px;
     padding: 15px;
-
     display: flex;
     flex-direction: column;
     border: #000000 solid 1px;
     border-radius: 10px;
     background-color: var(--service-item-background);
+    /* I thought i would try make it look cool */
     box-shadow: 0 4px 8px rgba(50, 16, 199, 0.2);
     transition: transform 0.3s ease, box-shadow 0.9s ease;
     text-align: center;
@@ -448,7 +401,6 @@ iframe {
     font-size: 1.2em;
     font-weight: 600;
     margin-bottom: 10px;
-
 }
 
 .service-item .service-desciption {
@@ -457,52 +409,39 @@ iframe {
 
 #services-table tr td {
     padding: 3px;
-
 }
 
 summary {
-
     text-align: center;
     font-size: 1.4em;
     font-weight: 600;
     margin: 10px;
     cursor: pointer;
-
-
 }
-
 
 /*------------------ Gallery-------------------------------*/
 
-
 .gallery-container {
-
     display: flex;
     flex-wrap: wrap;
     /* Allow items to wrap onto a new row */
     justify-content: center;
-
-    /* Center items horizontally */
 }
 
 .gallery-item {
-
     /* This gives 3 items per row */
     margin: 20px;
     text-align: center;
 }
 
 .gallery-item img {
-
     width: 100%;
     aspect-ratio: 1 / 1;
     /* keeps square shape */
-
     object-fit: cover;
     transition: transform 0.3s ease;
 }
 
-.gallery-item figcaption {}
 
 
 
@@ -512,13 +451,11 @@ summary {
         /* Make a lil bigger for smaller screens */
         width: 100%;
     }
-
 }
 
 /*------------------ Booking-------------------------------*/
 
 #booking-message {
-
     margin-bottom: 10px;
     font-size: 1.1em;
 }
@@ -534,7 +471,6 @@ form {
     width: 100%;
     max-width: 500px;
     padding: 0 15px;
-
 }
 
 .booking-form {
@@ -545,7 +481,6 @@ form {
     text-align: center;
     width: 100%;
     max-width: 500px;
-
 }
 
 .booking-form h4 {
@@ -593,7 +528,7 @@ form {
 
 /* Pop up styling */
 
-/* this pop is hidden by default and has to pe position fixed so we can use the z index to overlay it */
+/* this pop upis hidden by default and has to be position fixed so we can use the z index to overlay it */
 #popup {
     position: fixed;
     top: 0;
@@ -618,7 +553,6 @@ form {
 
 .popup-box button {
     background-color: var(--secondary);
-    /* MUI Primary Blue */
     margin: 20px;
     color: var(--white-text);
     border: none;
@@ -629,7 +563,7 @@ form {
 
 .popup-box button:hover {
     background-color: var(--accent-2);
-    /* Darker blue on hover */
+    /* Darker blue on hover to copy our styling */
 }
 
 .popup-info {
@@ -649,9 +583,9 @@ form {
 .contact-message {
     margin-top: 20px;
     margin-bottom: 20px;
-
     font-size: 1.3em;
 }
+
 
 .contact-details .contact-message {
     margin-top: 0;
@@ -719,19 +653,13 @@ form {
 
 .contact-button button:hover {
     background-color: var(--accent-2);
-    /* Darker blue on hover */
 }
 
-/* responsive part of the nav bar to toggle the hamburger */
 @media screen and (max-width: 768px) {
 
     .contact-details,
     .contact-message {
         padding: 10px;
     }
-
-
-
-
 
 }
