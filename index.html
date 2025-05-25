@@ -13,43 +13,53 @@
     href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
 
-    <!-- 
-    This is the non minified version to use when developing
-    <link rel="stylesheet" href="./css/styles.css"> 
-    -->
-    
-   <!-- Well use the minified version for production -->
-  <link rel="stylesheet" href="./css/styles-minified.css">
+
+  <link rel="stylesheet" href="./css/styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
 </head>
 
 <body>
   <!-- Header and navigation -->
   <header>
-    <!-- We make the logo on left and the other content on the right -->
-    <nav>
-      <a class="logo" href="./index.html">
+
+    <!-- Navbar ATTEMPT 1  -->
+    <nav class="navbar navbar-expand-lg px-3" style="background-color: var(--primary);">
+      <a class="navbar-brand" href="./index.html">
         <img src="./images/Snazzy-paws-home.png" alt="Logo home" width="70">
       </a>
-      <!-- wrap both the hamburder and nav links in a box so we can use in css and js -->
-      <div class="nav-link-box">
-        <div class="hamburger">
-          <img id="hamburger-menu" src="./images/burger-menu.svg" alt="Hamburger Menu" width="50">
-        </div>
-        <ul class="nav-links">
-          <li>
-            <a href="./index.html" style="text-decoration: underline">Home</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+        aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <img src="./images/burger-menu.svg" alt="Hamburger Menu" width="40">
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="./index.html" aria-current="page">Home</a>
           </li>
-          <li><a href="./services.html">Services</a></li>
-          <li><a href="./gallery.html">Gallery</a></li>
-          <li><a href="./booking.html">Booking</a></li>
-          <li><a href="./contact.html">Contact</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="./services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./booking.html">Booking</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contact.html">Contact</a>
+          </li>
         </ul>
       </div>
+      
     </nav>
-    <div class="page-title">
+
+    
+   <div class="page-title">
       <h1>Snazzy Paws Grooming</h1>
     </div>
+ 
   </header>
   <!-- Main content -->
   <main>
@@ -130,6 +140,8 @@
     </div>
   </footer>
   <script src="./js/navbar.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>
