@@ -9,14 +9,59 @@
     --service-item-background: #f0f0f0;
 }
 
+
+/* GlobalReset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+body {
+    min-height: 100vh;
+    max-width: 1400px;
+    border: #000000 solid 1px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body,
+.container {
+    /* Remove the padding so i can have our border */
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+
+}
+
+
+/* Fonts */
+.page_title h1 {
+    margin: 10px;
+    font-family: "Fredoka", sans-serif, Arial;
+    font-weight: 500;
+    font-size: 3em;
+    text-align: center;
+}
+
+h2 {
+    margin: 10px;
+    font-family: "Fredoka", sans-serif, Arial;
+    font-weight: 500;
+    font-size: 2em;
+}
+
+/* ---------------------Nav Bar ---------------- */
 /* Green background for navbar */
-.navbar {
+.navbar,
+.page_title {
     background-color: var(--primary);
 }
 
 /* Nav links */
 .navbar-nav .nav-link {
-    color: var(--primary-text) ;
+    color: var(--primary-text);
     font-size: 1.5em;
     padding: 10px 20px;
 }
@@ -36,6 +81,35 @@
     width: 40px;
 }
 
-.navbar-nav{
+.navbar-nav {
     text-align: center;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary);
+    padding: 10px
+}
+
+footer p {
+    margin: 2px 0;
+    /* reduce spacing for the P elements */
+}
+
+.privacy-link {
+    padding-top: 12px;
+}
+
+/* Main content */
+
+main {
+    /* This pushes footer to the bottom */
+    padding: 12px;
+    flex: 1;
+
+}
+#home P {
+    font-size: 1.2em;
+    margin: 10px;
+    line-height: 1.3em;
 }
