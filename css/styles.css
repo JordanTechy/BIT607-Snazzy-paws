@@ -158,3 +158,30 @@ iframe {
     aspect-ratio: 16/9;
     border: none;
 }
+
+/* -------Gallery */
+/*------------------ Gallery-------------------------------*/
+
+.gallery-container {
+
+    max-width: 200px;
+    max-height: 200px;
+    /* Allow items to wrap onto a new row */
+}
+
+.gallery-item {
+    /* This gives 3 items per row */
+    margin: 10px;
+    text-align: center;
+}
+
+.gallery-item img {
+    /* these to make it look normal even with the max-witth */
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+.page-desc{
+    font-size: 1.5em;
+    flex: auto;
+    text-align: center;
+}
