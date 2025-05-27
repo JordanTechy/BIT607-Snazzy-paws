@@ -180,8 +180,51 @@ iframe {
     aspect-ratio: 1 / 1;
     object-fit: cover;
 }
-.page-desc{
-    font-size: 1.5em;
-    flex: auto;
+
+.page-desc {
     text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+/*------------------ Services-------------------------------*/
+/* removed all the flexbox stuff and kept some styling
+simplified the html alow and use bootstrap cols */
+
+.service-item {
+
+    width: 100%;
+    height: 100%;
+    border: #000000 solid 1px;
+    border-radius: 10px;
+    background-color: var(--service-item-background);
+    /* I thought i would try make it look cool */
+    box-shadow: 0 4px 8px rgba(50, 16, 199, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.9s ease;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.1em;
+
+}
+
+.service-item:hover {
+    transform: scale(1.1);
+}
+
+.service-name {
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+
+/* Services Table we removed old styling and use the new bootstrap table
+but kept the summary styling  */
+
+summary {
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: 600;
+    margin: 10px;
+    cursor: pointer;
 }
