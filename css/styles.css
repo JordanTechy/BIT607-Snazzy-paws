@@ -15,7 +15,9 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    /* Deafult fonts */
     font-family: Arial, sans-serif;
+
 }
 
 
@@ -36,27 +38,27 @@ body,
 }
 
 
-/* Fonts */
-.page_title h1 {
+
+
+/* ---------------------Nav Bar ---------------- */
+/* Green background for navbar */
+/* Bootstraps toggle replacing my hamburger navbar javascript 
+  NOTE: Now it stays at the top and we dont have to use the zindex 
+  and javascript to swap the toggle button
+  
+  */
+.navbar,
+#heading-title {
+    background-color: var(--primary);
+    padding: 10px !important;
+}
+
+#heading-title h1 {
     margin: 10px;
     font-family: "Fredoka", sans-serif, Arial;
     font-weight: 500;
     font-size: 3em;
     text-align: center;
-}
-
-h2 {
-    margin: 10px;
-    font-family: "Fredoka", sans-serif, Arial;
-    font-weight: 500;
-    font-size: 2em;
-}
-
-/* ---------------------Nav Bar ---------------- */
-/* Green background for navbar */
-.navbar,
-.page_title {
-    background-color: var(--primary);
 }
 
 /* Nav links */
@@ -85,7 +87,7 @@ h2 {
     text-align: center;
 }
 
-/* Footer */
+/*-------------------- Footer----------------- */
 footer {
     background-color: var(--primary);
     padding: 10px
@@ -103,13 +105,56 @@ footer p {
 /* Main content */
 
 main {
-    /* This pushes footer to the bottom */
     padding: 12px;
     flex: 1;
+    /* This pushes footer to the bottom */
+    font-size: 1.2em;
+
 
 }
+
+/* Fonts */
+
+#page-title h2 {
+    font-size: 2.5em;
+}
+
+h2 {
+    margin: 10px;
+    font-family: "Fredoka", sans-serif, Arial;
+    font-weight: 500;
+    font-size: 2em;
+}
+
+
+
 #home P {
     font-size: 1.2em;
     margin: 10px;
     line-height: 1.3em;
+}
+
+/* use the id because its more specific then the bootstrap class */
+#book-now-btn {
+    /*  Primary Blue */
+    margin: 20px;
+    padding: 8px 16px;
+    font-size: 2em;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 16/9;
+    border: none;
 }
