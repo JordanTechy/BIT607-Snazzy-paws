@@ -184,7 +184,7 @@ iframe {
 .page-desc {
     text-align: center;
     margin-bottom: 20px;
-    font-size: 1.5em;
+    font-size: 1.3em;
 }
 
 /*------------------ Services-------------------------------*/
@@ -228,3 +228,22 @@ summary {
     margin: 10px;
     cursor: pointer;
 }
+
+/* -------------------Booking page--------------- */
+#booking-form {
+    width: 100%;
+    max-width: 500px;
+}
+
+.form-control {
+    /* Darken the bootstrap input borders as they where quite light */
+    border: #000000 solid 1px !important;
+
+}
+
+#popup-data {
+    width: 100%;
+}
+
+/* Note: to center the labels when smaller screens to match we used
+text-sm-start text-center */

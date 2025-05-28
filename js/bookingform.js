@@ -1,4 +1,4 @@
-// This is to controll the pop up in the booking page 
+//This is to controll the pop up in the booking page
 
 document.addEventListener("DOMContentLoaded", function () {
   console.log("DOM LOADED");
@@ -8,13 +8,26 @@ document.addEventListener("DOMContentLoaded", function () {
   bookingForm.addEventListener("submit", function (event) {
     // prevent the form from submitting so i can use this script first
     event.preventDefault();
-    openPopup();
   });
 });
 
-function openPopup() {
+function handleSubmitBtn() {
+  const bookingForm = document.getElementById("booking-form");
+  if (bookingForm.checkValidity()) {
+    console.log("validated");
+    // Using bootstrap built in javascipt get the bootstrap model and show it
+    const modal = new bootstrap.Modal(document.getElementById("booking-popup"));
+    // get the form data and set it in the popup model
+    setPopupValues();
+    modal.show();
+  } else {
+    console.log("not validated");
+  }
+}
+
+function setPopupValues() {
   // set the pop up to flex to show it
-  document.getElementById("popup").style.display = "flex";
+  // document.getElementById("booking-popup").style.display = "flex";
   try {
     // get all the values from the form and set them there ids
     // Name
@@ -33,7 +46,7 @@ function openPopup() {
     var petAge = document.getElementById("pet-age").value;
     var popupPetAge = document.getElementById("popup-pet-age");
     popupPetAge.innerHTML = petAge;
-    
+
     //email
     var email = document.getElementById("email").value;
     var popupEmail = document.getElementById("popup-email");
@@ -62,17 +75,16 @@ function openPopup() {
 
 function handleYes() {
   // if user clicks yes then we will just use the alert to confirm
-  document.getElementById("popup").style.display = "none";
-
   alert(
     "Success your booking has been submitted you will get an email confirmation soon\n"
   );
   // sent the user back to the home page
 
   const bookingForm = document.getElementById("booking-form");
-  bookingForm.reset(); // reset the form
+  // difference here is submitting the form will reset the page closing the model
+  bookingForm.submit(); // this will reset the form and the model will close
 }
 
 function handleNo() {
-  document.getElementById("popup").style.display = "none";
+  // Dont need to use this now as the bootstrap has a close
 }

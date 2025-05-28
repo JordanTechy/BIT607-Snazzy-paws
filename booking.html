@@ -71,117 +71,180 @@
   <!-- Main content -->
   <main>
     <!-- Page title  -->
-    <div id="page-title" class="container d-flex justify-content-center">
-      <h2>Booking</h2>
-    </div>
-    <!-- Page content  -->
-    <div class="booking-form">
-      <p id="booking-message">
-        Please fill in the following form to book your appointment and
-        well get back to you with a confirmation email.
-      </p>
-      <form id="booking-form">
-        <div class="form-group">
-          <label for="name">Name:</label>
-          <input id="name" type="text" name="name" required>
+    <div id="booking-form-container">
+
+      <div id="page-title" class="container d-flex justify-content-center">
+        <h2>Booking</h2>
+      </div>
+      <!-- Page content  -->
+
+      <form id="booking-form" class="container">
+        <p class="page-desc"> Please fill in the following form to book your appointment and
+          well get back to you with a confirmation email. </p>
+        <div class="form-group row">
+          <label for="name" class="col-sm-4 col-form-label text-sm-start text-center">Name:</label>
+          <div class="col-sm-8">
+            <input class="form-control" id="name" type="text" name="name" required>
+          </div>
         </div>
-        <div class="form-group">
-          <label for="pet-name">Pet name:</label>
-          <input type="text" id="pet-name" name="pet-name" required>
+
+        <div class="form-group row">
+          <label for="pet-name" class="col-sm-4 col-form-label text-sm-start text-center">Pet name:</label>
+          <div class="col-sm-8">
+
+            <input class="form-control" type="text" id="pet-name" name="pet-name" required>
+          </div>
         </div>
-        <div class="form-group">
-          <label for="pet-breed">Breed:</label>
-          <input type="text" id="pet-breed" name="pet-breed" required>
+
+        <div class="form-group row">
+          <label for="pet-breed" class="col-sm-4 col-form-label text-sm-start text-center">Breed:</label>
+          <div class="col-sm-8">
+            <input class="form-control" type="text" id="pet-breed" name="pet-breed" required>
+          </div>
         </div>
-        <div class="form-group">
-          <label for="pet-age">Pet age:</label>
-          <input type="number" id="pet-age" name="pet-age" required>
+        <div class="form-group row">
+          <label for="pet-age" class="col-sm-4 col-form-label text-sm-start text-center">Pet age:</label>
+          <div class="col-sm-8">
+            <input class="form-control" type="number" id="pet-age" name="pet-age" required>
+          </div>
         </div>
-        <div class="form-group">
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required>
+        <div class="form-group row">
+          <label for="email" class="col-sm-4 col-form-label text-sm-start text-center">Email:</label>
+          <div class="col-sm-8">
+            <input class="form-control" type="email" id="email" name="email" required>
+          </div>
         </div>
-        <div class="form-group">
-          <label for="service">Service:</label>
-          <select id="service" name="service" required>
-            <option value="" disabled selected>Select a service</option>
-            <option value="bath_and_brush">Bath and brush</option>
-            <option value="haircut">Haircut</option>
-            <option value="nail_trim">Nail trim</option>
-            <option value="ear_cleaning">Ear cleaning</option>
-            <option value="teeth_brushing">Teeth brushing</option>
-            <option value="deshedding_treatment">De-shedding treatment</option>
-            <option value="flea_tick_treatment">Flea and tick treatment</option>
-            <option value="spa_package">Spa package</option>
-            <option value="express_service">Express service</option>
-            <option value="medicated_bath">Medicated bath</option>
-            <option value="special_breed_cuts">Special-breed cuts</option>
-            <option value="puppy_package">Puppy package</option>
-            <option value="senior_dog_package">Senior dog package</option>
-            <option value="full_grooming_package">Full grooming package</option>
-          </select>
+        <div class="form-group row">
+          <label for="service" class="col-sm-4 col-form-label text-sm-start text-center">Service:</label>
+          <div class="col-sm-8">
+            <select class="form-control" id="service" name="service" required>
+              <option value="" disabled selected>Select a service</option>
+              <option value="bath_and_brush">Bath and brush</option>
+              <option value="haircut">Haircut</option>
+              <option value="nail_trim">Nail trim</option>
+              <option value="ear_cleaning">Ear cleaning</option>
+              <option value="teeth_brushing">Teeth brushing</option>
+              <option value="deshedding_treatment">De-shedding treatment</option>
+              <option value="flea_tick_treatment">Flea and tick treatment</option>
+              <option value="spa_package">Spa package</option>
+              <option value="express_service">Express service</option>
+              <option value="medicated_bath">Medicated bath</option>
+              <option value="special_breed_cuts">Special-breed cuts</option>
+              <option value="puppy_package">Puppy package</option>
+              <option value="senior_dog_package">Senior dog package</option>
+              <option value="full_grooming_package">Full grooming package</option>
+            </select>
+          </div>
         </div>
-        <div class="form-group">
-          <label for="date">Date:</label>
-          <input type="date" id="date" name="date" required>
+        <div class="form-group row">
+          <label for="date" class="col-sm-4 col-form-label text-sm-start text-center">Date:</label>
+          <div class="col-sm-8">
+            <input class="form-control" type="date" id="date" name="date" required>
+          </div>
         </div>
-        <div class="form-group">
-          <label for="time">Time:</label>
-          <input type="time" id="time" name="time" min="09:00" max="15:00" required>
+        <div class="form-group row">
+          <label for="time" class="col-sm-4 col-form-label text-sm-start text-center">Time:</label>
+          <div class="col-sm-8">
+            <input class="form-control" type="time" id="time" name="time" min="09:00" max="15:00" required>
+          </div>
         </div>
-        <div id="time-message">
+        <div class="d-flex justify-content-center">
           <p>Please choose a time between 9am and 5pm </p>
         </div>
-        <input class="book-now-btn" type="submit" value="Submit">
+        <div id="page-title" class="d-flex justify-content-center">
+          <!-- Instead of submiting form use the handleSubmitBtn in out Javascript -->
+          <button id="book-now-btn" onclick="handleSubmitBtn()" class=" btn btn-primary mb-2"> submit</button>
+        </div>
       </form>
-      <!-- Pop up NOTE: We use the ids in the bookingform.js file -->
-      <div id="popup">
-        <div class="popup-box">
-          <p>Please confirm </p>
-          <div class="popup-info">
-            <p class="popup-label">Name:</p>
-            <p id="popup-name"></p>
-          </div>
+    </div>
 
-          <div class="popup-info">
-            <p class="popup-label">Pet Name:</p>
-            <p id="popup-pet-name"></p>
+    <!-- New Bootstrap Model to replace the Popup
+      we use bootstrap javascript api to open it
+    we populate the paragraph ids in the javascrip -->
+    <div id="booking-popup" class="modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Please Confirm </h5>
           </div>
-          <div class="popup-info">
-            <p class="popup-label">Pet breed:</p>
-            <p id="popup-pet-breed"></p>
-          </div>
-          <div class="popup-info">
-            <p class="popup-label">Pet age:</p>
-            <p id="popup-pet-age"></p>
-          </div>
-          <div class="popup-info">
-            <p class="popup-label">Email:</p>
-            <p id="popup-email"></p>
-          </div>
+          <div class="modal-body">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-4  fw-bold">
+                  Name:
+                </div>
+                <div class="col-sm-8 ">
+                  <p id="popup-name"></p>
+                </div>
+              </div>
+              <div class="row ">
+                <div class="col-sm-4  fw-bold">
+                  Pet Name:
+                </div>
+                <div class="col-sm-8 ">
+                  <p id="popup-pet-name"></p>
+                </div>
+              </div>
+              <div class="row ">
+                <div class="col-sm-4  fw-bold">
+                  Pet breed:
+                </div>
+                <div class="col-sm-8 ">
+                  <p id="popup-pet-breed"></p>
+                  <p id="popup-pet-name"></p>
+                </div>
+              </div>
+              <div class="row ">
+                <div class="col-sm-4  fw-bold">
+                  Pet age:
+                </div>
+                <div class="col-sm-8 ">
+                  <p id="popup-pet-age"></p>
+                </div>
+              </div>
 
-          <div class="popup-info">
-            <p class="popup-label">Service:</p>
-            <p id="popup-service"></p>
+              <div class="row ">
+                <div class="col-sm-4  fw-bold">
+                  Email:
+                </div>
+                <div class="col-sm-8 ">
+                  <p id="popup-email"></p>
+                </div>
+              </div>
+              <div class="row ">
+                <div class="col-sm-4  fw-bold">
+                  Service:
+                </div>
+                <div class="col-sm-8 ">
+                  <p id="popup-service"></p>
+                </div>
+              </div>
+              <div class="row ">
+                <div class="col-sm-4  fw-bold">
+                  Date:
+                </div>
+                <div class="col-sm-8 ">
+                  <p id="popup-date"></p>
+                </div>
+              </div>
+              <div class="row ">
+                <div class="col-sm-4  fw-bold">
+                  Time:
+                </div>
+                <div class="col-sm-8 ">
+                  <p id="popup-time"></p>
+                </div>
+              </div>
+            </div>
           </div>
-
-          <div class="popup-info">
-            <p class="popup-label">Date:</p>
-            <p id="popup-date"></p>
+          <div class="modal-footer">
+            <p class="d-flex justify-content-center">Are you sure?</p>
+            <button type="button" onclick="handleYes()" class="btn btn-primary">Yes</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
           </div>
-
-          <div class="popup-info">
-            <p class="popup-label">Time:</p>
-            <p id="popup-time"></p>
-          </div>
-
-          <p>Are you sure?</p>
-
-          <button onclick="handleYes()">Yes</button>
-          <button onclick="handleNo()">No</button>
         </div>
       </div>
-      <!-- Pop up -->
+    </div>
     </div>
   </main>
   <!-- Footer  -->
@@ -214,6 +277,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
     crossorigin="anonymous"></script>
+  <script src="./js/bookingform.js"></script>
 
 </body>
 
