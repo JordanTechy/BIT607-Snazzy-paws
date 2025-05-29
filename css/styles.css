@@ -27,6 +27,9 @@ body {
     border: #000000 solid 1px;
     margin-left: auto;
     margin-right: auto;
+    /* Reset bootstraps lighther default black */
+    color: black !important;
+
 }
 
 body,
@@ -43,7 +46,7 @@ body,
 /* ---------------------Nav Bar ---------------- */
 /* Green background for navbar */
 /* Bootstraps toggle replacing my hamburger navbar javascript 
-  NOTE: Now it stays at the top and we dont have to use the zindex 
+  NOTE: Now it is differnt as it stays at the top and we dont have to use the zindex 
   and javascript to swap the toggle button
   
   */
@@ -247,3 +250,49 @@ summary {
 
 /* Note: to center the labels when smaller screens to match we used
 text-sm-start text-center */
+
+
+/* --------------Contact page-------------- */
+
+
+.contact-message {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 1.3em;
+}
+
+.contact-details p {
+    margin: 0;
+}
+
+.comment {
+    width: 100%;
+    border: #000000 1px solid;
+}
+
+.my-form-container {
+    padding: 10px;
+    padding-right: 10px;
+}
+
+.contact-btn {
+    font-size: 1.8em;
+}
+
+
+.contact-btn input {
+    /* MUI Primary Blue */
+    margin: 10px;
+    font-size: 1em;
+}
+
+.contact-map {
+    width: 100%;
+}
+
+/*  make the map max width 800 by max width and margin auto */
+
+.contact-map-div {
+    max-width: 800px;
+    margin: auto;
+}

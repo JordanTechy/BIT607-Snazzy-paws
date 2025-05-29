@@ -43,7 +43,7 @@
       <div class="collapse navbar-collapse" id="mainNavbar">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link active" href="./index.html">Home</a>
+            <a class="nav-link"  href="./index.html">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="./services.html">Services</a>
@@ -52,32 +52,25 @@
             <a class="nav-link" href="./gallery.html">Gallery</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./booking.html" aria-current="page" style="text-decoration: underline">Booking</a>
+            <a  href="./booking.html" aria-current="page" class="nav-link active" style="text-decoration: underline">Booking</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="./contact.html">Contact</a>
           </li>
         </ul>
       </div>
-
     </nav>
-
-
+    <!-- Site title -->
     <div id="heading-title" class="container d-flex  justify-content-center">
       <h1>Snazzy Paws Grooming</h1>
     </div>
-
   </header>
   <!-- Main content -->
   <main>
-    <!-- Page title  -->
     <div id="booking-form-container">
-
       <div id="page-title" class="container d-flex justify-content-center">
         <h2>Booking</h2>
       </div>
-      <!-- Page content  -->
-
       <form id="booking-form" class="container">
         <p class="page-desc"> Please fill in the following form to book your appointment and
           well get back to you with a confirmation email. </p>
@@ -87,15 +80,12 @@
             <input class="form-control" id="name" type="text" name="name" required>
           </div>
         </div>
-
         <div class="form-group row">
           <label for="pet-name" class="col-sm-4 col-form-label text-sm-start text-center">Pet name:</label>
           <div class="col-sm-8">
-
             <input class="form-control" type="text" id="pet-name" name="pet-name" required>
           </div>
         </div>
-
         <div class="form-group row">
           <label for="pet-breed" class="col-sm-4 col-form-label text-sm-start text-center">Breed:</label>
           <div class="col-sm-8">
@@ -158,9 +148,9 @@
       </form>
     </div>
 
-    <!-- New Bootstrap Model to replace the Popup
-      we use bootstrap javascript api to open it
-    we populate the paragraph ids in the javascrip -->
+    <!-- New Bootstrap Model to replace the Popup 
+    to open it we use bootstrap javascript api in the handleSubmitBtn() 
+    to load data from the form we populate the innter html for example id=popup-name -->
     <div id="booking-popup" class="modal" tabindex="-1" role="dialog">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -239,6 +229,7 @@
           </div>
           <div class="modal-footer">
             <p class="d-flex justify-content-center">Are you sure?</p>
+            <!-- This on click handleYes is where it opens a alert or otherwise talk to server -->
             <button type="button" onclick="handleYes()" class="btn btn-primary">Yes</button>
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
           </div>

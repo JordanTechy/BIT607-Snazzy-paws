@@ -43,7 +43,7 @@
       <div class="collapse navbar-collapse" id="mainNavbar">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link active" href="./index.html" >Home</a>
+            <a class="nav-link " href="./index.html">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="./services.html">Services</a>
@@ -55,7 +55,7 @@
             <a class="nav-link" href="./booking.html">Booking</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./contact.html" aria-current="page"
+            <a class="nav-link active" href="./contact.html" aria-current="page"
               style="text-decoration: underline">Contact</a>
           </li>
         </ul>
@@ -76,60 +76,76 @@
       <h2>Contact</h2>
     </div>
     <!-- Page content  -->
-    <section>
-      <div class="contact-details">
-        <p class="contact-message">We are here to help you with all your pet grooming needs. </p>
-        <div class="contact-details-group">
-          <p> <b>Owners Name:</b> Jannet</p>
-          <p> <b>PH:</b> 123456789</p>
-          <p> <b>Email:</b>
-            <a href="mailto:snazzypaws@gmail.com">snazzyparsgrooming@outlook.com</a>
-          </p>
-          <p><b>Opening Hours:</b> 9am - 5pm</p>
-          <p><b>Address:</b>123 henry lane, hamilton</p>
+    <section class="container">
+
+      <p class="contact-message text-center">We are here to help you with all your pet grooming needs. </p>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-11 col-sm-10 col-md-8 col-lg-6 ">
+
+            <div class="contact-details ">
+              <p> <b>Owners Name:</b> Jannet</p>
+              <p> <b>PH:</b> 123456789</p>
+              <p> <b>Email:</b>
+                <a href="mailto:snazzypaws@gmail.com">snazzyparsgrooming@outlook.com</a>
+              </p>
+              <p><b>Opening Hours:</b> 9am - 5pm</p>
+              <p><b>Address:</b>123 henry lane, hamilton</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <div class="contact-form">
-      <div></div>
-      <p class="contact-message">Fill out this form with any questions or concerns and well get
-        right back to you.</p>
-      <form onsubmit="alert('Thank you for contacting us! We will get back to you shortly.'); return false;">
-        <div class="form-group">
-          <label for="name">Name:</label>
-          <input id="name" type="text" name="name" required>
-        </div>
-        <div class="form-group">
-          <label for="email">Email:</label>
-          <input id="email" type="email" name="email" required>
-        </div>
-        <div class="form-group">
-          <label for="phone">Phone:</label>
-          <input id="phone" type="tel" name="phone" required>
-        </div>
+    <p class="contact-message  text-center">Fill out this form with any questions or concerns and well get
+      right back to you.</p>
 
-        <div class="form-group">
-          <label for="comment">Message:</label>
-          <textarea id="comment" class="comment" name="comment" rows="4" required></textarea>
+    </div>
+    <!-- Tryed to keep the form in the middle -->
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-11 col-sm-10 col-md-8 col-lg-6 ">
+
+          <form onsubmit="alert('Thank you for contacting us! We will get back to you shortly.'); return false;">
+            <div class="form-group row">
+              <label for="name" class="col-sm-4 col-form-label text-sm-start text-center">Name:</label>
+              <input id="name" type="text" name="name" required class="col-sm-8">
+            </div>
+            <div class="form-group row">
+              <label for="email" class="col-sm-4 col-form-label text-sm-start text-center">Email:</label>
+              <input id="email" type="email" name="email" required class="col-sm-8">
+            </div>
+            <div class="form-group row">
+              <label for="phone" class="col-sm-4 col-form-label text-sm-start text-center">Phone:</label>
+              <input id="phone" type="tel" name="phone" required class="col-sm-8">
+            </div>
+
+            <div class="form-group row">
+              <div>
+              </div>
+              <label for="comment" class="col-sm-4 col-form-label text-sm-start text-center">Message:</label>
+              <textarea id="comment" class="comment col-sm-8" name="comment" rows="4" required></textarea>
+            </div>
+            <div class="contact-btn text-center">
+              <input class="btn btn-primary mb-2" type="submit" value="Submit">
+            </div>
+          </form>
+
         </div>
-        <div class="form-btn">
-          <input type="submit" value="Submit">
-        </div>
-      </form>
+      </div>
     </div>
 
-    <section class="contact-map">
-      <h2>Location</h2>
-      <p> 123 henry lane, hamilton</p>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.1304737368964!2d175.2786074884247!3d-37.78698196025458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d6d18bac5c2466b%3A0x251e45ef25a07607!2sSkyCity%20Hamilton!5e0!3m2!1sen!2snz!4v1746647745317!5m2!1sen!2snz"
-        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <section class="contact-map ">
+      <h2 class="contact-message  text-center">Location</h2>
+      <p class="contact-message  text-center"> 123 henry lane, hamilton</p>
+      <div class="contact-map-div">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.1304737368964!2d175.2786074884247!3d-37.78698196025458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d6d18bac5c2466b%3A0x251e45ef25a07607!2sSkyCity%20Hamilton!5e0!3m2!1sen!2snz!4v1746647745317!5m2!1sen!2snz"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
     </section>
-
   </main>
-
 
   <!-- Footer  -->
   <footer>
