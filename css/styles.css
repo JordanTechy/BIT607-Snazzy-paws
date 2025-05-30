@@ -1,3 +1,13 @@
+/*
+
+Css For Snazzy Paws Grooming
+
+To convert to bootstrap i re-wrote the entire css 
+I tryed to keep all sizing out of the css like flex and stuff
+I had to do some overides and styling in here for it to match
+
+*/
+
 :root {
     /* Variable so i can play with colors*/
     --primary: #00bf7d;
@@ -20,8 +30,8 @@
 
 }
 
-
 body {
+    /* This min-height is to keep the footer at the bottom even if the body content is smaller */
     min-height: 100vh;
     max-width: 1400px;
     border: #000000 solid 1px;
@@ -39,9 +49,6 @@ body,
     padding-right: 0 !important;
 
 }
-
-
-
 
 /* ---------------------Nav Bar ---------------- */
 /* Green background for navbar */
@@ -281,7 +288,6 @@ text-sm-start text-center */
 
 
 .contact-btn input {
-    /* MUI Primary Blue */
     margin: 10px;
     font-size: 1em;
 }
